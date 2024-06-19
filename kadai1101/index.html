@@ -5,8 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>丸い矢印付きの見出し</title>
 </head>
+<style>
+    .arrow-heading{
+        position:relative;
+        padding-left:40px;
+        font-size:24px;
+    }
+    .arrow-heading::before{
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 24px;
+        height: 24px;
+        background-color: #5BDB9E;
+        border-radius: 50%;
+    }
+
+    .arrow-heading::after{
+        content: "";
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        transform: translateY(-50%) rotate(45deg);
+        width: 8px;
+        height: 8px;
+        border-right: 2px solid white;
+        border-bottom: 2px solid white;
+    }
+</style>
 <body>
-    <h1 class="q1">丸い矢印付きの見出し</h1>
+    <h1 class="arrow-heading">丸い矢印付きの見出し</h1>
 
 </body>
 </html>
