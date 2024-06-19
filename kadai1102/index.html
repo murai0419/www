@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>吹き出しのような見出し</title>
+</head>
+<body>
+    <h1 class="q2">吹き出しのような見出し</h1>
+    <style>
+       h1.q2 {
+    height: 2.75rem;
+    line-height: 2.75rem;
+    background-color: #5bdb9e;
+    color: #fff;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    position: relative;
+    display: inline-block;
+}
+
+h1.q2::after {
+    content: "";
+    position: absolute;
+    bottom: -15px; /* 吹き出しの三角形の位置 */
+    left: 50px; /* 三角形の位置調整 */
+    border-width: 15px;
+    border-style: solid;
+    border-color: #5BDB9E transparent transparent transparent;
+} 
+    </style>
+</body>
+</html>
