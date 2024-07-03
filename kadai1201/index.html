@@ -24,6 +24,62 @@
             <img src="section3.jpg" alt="S3">
         </section>
     </div>
-    
+    <style>
+        body{
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.section {
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    box-sizing: border-box;
+}
+
+.section1 {
+    background-color: #d0e7ff;
+}
+
+.section2 {
+    background-color: #ffe5d0;
+}
+
+.section3 {
+    background-color: #f0d0ff;
+}
+
+.section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+    </style>
 </body>
 </html>
